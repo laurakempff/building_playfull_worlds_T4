@@ -4,25 +4,30 @@ using UnityEngine;
 public class dag_naar_nacht : MonoBehaviour
 {
     
-    public GameObject light;
+    public GameObject day_light;
     public GameObject night_light;
+    //public Light nacht_light;
 
     public Material nacht;
 
-    private bool on = true;
+
+   
 
     void OnTriggerStay(Collider plyr) 
     {
-        if (plyr.tag == "Player") ;
+        if (plyr.tag == "Player")
         {
-            light.SetActive(false);
-            on = false;
+            day_light.SetActive(false);
+
 
             night_light.SetActive(true);
-            on = true;
+
 
             RenderSettings.skybox = nacht;
-        }
+            //RenderSettings.sun = nacht_light;
 
+        }
+        
+        
     }
 }
