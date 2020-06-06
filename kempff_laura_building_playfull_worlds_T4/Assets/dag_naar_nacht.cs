@@ -9,7 +9,7 @@ public class dag_naar_nacht : MonoBehaviour
     //public Light nacht_light;
 
     public Material nacht;
-
+    public AudioSource portal_sound;
 
    
 
@@ -22,6 +22,7 @@ public class dag_naar_nacht : MonoBehaviour
 
             night_light.SetActive(true);
 
+            portal_sound.Play();
 
             RenderSettings.skybox = nacht;
             //RenderSettings.sun = nacht_light;
