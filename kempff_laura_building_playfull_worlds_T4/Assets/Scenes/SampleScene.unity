@@ -2511,7 +2511,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683962807}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -378.82617, y: -120.31024, z: 107.90466}
+  m_LocalPosition: {x: -377.8, y: -120.31024, z: 107.90466}
   m_LocalScale: {x: 39.97944, y: 39.97944, z: 39.97944}
   m_Children: []
   m_Father: {fileID: 2102045436}
@@ -3252,6 +3252,7 @@ GameObject:
   - component: {fileID: 1268660563}
   - component: {fileID: 1268660562}
   - component: {fileID: 1268660561}
+  - component: {fileID: 1268660565}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -3327,12 +3328,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268660560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1239.4, y: 195.5, z: 966.9}
-  m_LocalScale: {x: -29.961632, y: -104.23536, z: -98.79128}
+  m_LocalPosition: {x: 1239.4, y: 195.9, z: 966.9}
+  m_LocalScale: {x: -31.90099, y: -91.04248, z: -90.30865}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1268660565
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268660560}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2e241cae2d17dd140bea4cd69b7ebcf3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1277704800 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 99f1f157352e6a4499d3c0ab263c9a98,
@@ -4291,7 +4311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524374344}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10, y: -120.31024, z: 107.90466}
+  m_LocalPosition: {x: 19.5, y: -120.31024, z: 107.90466}
   m_LocalScale: {x: 39.97944, y: 39.97944, z: 39.97944}
   m_Children: []
   m_Father: {fileID: 2102045436}
