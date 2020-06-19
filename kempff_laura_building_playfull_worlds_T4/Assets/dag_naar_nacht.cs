@@ -9,6 +9,7 @@ public class dag_naar_nacht : MonoBehaviour
     //public Light nacht_light;
 
     public Material nacht;
+    //public Material dag;
     public AudioSource portal_sound;
 
     
@@ -28,7 +29,17 @@ public class dag_naar_nacht : MonoBehaviour
             //RenderSettings.sun = nacht_light;
 
         }
-        
-        
+
+        //if (plyr.tag == "player" && RenderSettings.skybox == nacht)
+        //{
+        //    day_light.SetActive(true);
+
+
+        //    night_light.SetActive(false);
+
+        //    portal_sound.Play();
+ 
+        //    RenderSettings.skybox = dag;
+        //}
     }
 }
