@@ -63,7 +63,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HdrExposure: 0.8
+    - _HdrExposure: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -71,11 +71,11 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SunStrength: 1
+    - _SunStrength: 0
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GroundColor: {r: 0.45768064, g: 0.52156866, b: 0.52156866, a: 1}
-    - _SunTint: {r: 1, g: 0.13217431, b: 0, a: 1}
+    - _GroundColor: {r: 0.3233802, g: 0.40082037, b: 0.4056604, a: 1}
+    - _SunTint: {r: 1, g: 1, b: 1, a: 1}

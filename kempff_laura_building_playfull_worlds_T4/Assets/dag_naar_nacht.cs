@@ -6,17 +6,20 @@ public class dag_naar_nacht : MonoBehaviour
     
     public GameObject day_light;
     public GameObject night_light;
-    //public Light nacht_light;
+    public Light nacht_light;
 
     public Material nacht;
-    //public Material dag;
+    public Material dag;
     public AudioSource portal_sound;
+
+    public bool isnacht;
+
 
     
 
-    void OnTriggerStay(Collider plyr) 
+    void OnTriggerEnter(Collider plyr )
     {
-        if (plyr.tag == "Player")
+        if (plyr.tag == "Player" && isnacht == false)
         {
             day_light.SetActive(false);
 
@@ -25,21 +28,24 @@ public class dag_naar_nacht : MonoBehaviour
 
             portal_sound.Play();
 
+            isnacht = true;
+
             RenderSettings.skybox = nacht;
-            //RenderSettings.sun = nacht_light;
+            RenderSettings.sun = nacht_light;
 
         }
 
-        //if (plyr.tag == "player" && RenderSettings.skybox == nacht)
-        //{
-        //    day_light.SetActive(true);
+        else if (plyr.tag == "Player" && isnacht == true) 
+        {
+           day_light.SetActive(true);
 
+            isnacht = false;
 
-        //    night_light.SetActive(false);
+           night_light.SetActive(false);
 
-        //    portal_sound.Play();
+           portal_sound.Play();
  
-        //    RenderSettings.skybox = dag;
-        //}
+            RenderSettings.skybox = dag;
+        }
     }
 }
